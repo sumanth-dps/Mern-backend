@@ -5,7 +5,7 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 import authRouter from "./routes/authRoutes.js";
 const allowedOrigins = [
-  "https://mern-backend-n415.onrender.com"
+  "http://localhost:5173"
 ];
 const app = express();
 app.use(express.json());
