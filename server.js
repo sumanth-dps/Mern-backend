@@ -5,8 +5,7 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 import authRouter from "./routes/authRoutes.js";
 const allowedOrigins = [
-  "https://great-stack-authentication",
-  "http://great-stack-authentication",
+  "https://great-stack-authentication"
 ];
 const app = express();
 app.use(express.json());
