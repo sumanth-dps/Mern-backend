@@ -8,7 +8,7 @@ import authRouter from "./routes/authRoutes.js";
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ credentials: true }));
+app.use(cors({ origin:"*", credentials: true }));
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
