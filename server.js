@@ -5,7 +5,7 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 import authRouter from "./routes/authRoutes.js";
 const allowedOrigins = [
-  "https://great-stack-authentication"
+  "https://mern-backend-n415.onrender.com"
 ];
 const app = express();
 app.use(express.json());
