@@ -18,7 +18,8 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
+app.use("/" ()=>{
+       console.log("allowed from anywhere")})
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`Listening to port: ${port}`);
