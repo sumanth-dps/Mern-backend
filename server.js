@@ -18,7 +18,7 @@ app.use(cookieParser());
 // };
 
 
-app.use("/" ()=>{
+app.use("/", ()=>{
        console.log("allowed from anywhere")})
 app.use(cors());
 const port = process.env.PORT || 4000;
