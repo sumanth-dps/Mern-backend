@@ -8,18 +8,19 @@ import authRouter from "./routes/authRoutes.js";
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-const corsOptions = {
-  origin:
-    process.env.NODE_ENV === "production"
-      ? "https://great-stack-authentication.netlify.app" // Production URL
-      : "http://localhost:5173", // Local development
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true,
-};
+// const corsOptions = {
+//   origin:
+//     process.env.NODE_ENV === "production"
+//       ? "https://great-stack-authentication.netlify.app" // Production URL
+//       : "http://localhost:5173", // Local development
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//   credentials: true,
+// };
 
-app.use(cors(corsOptions));
+
 app.use("/" ()=>{
        console.log("allowed from anywhere")})
+app.use(cors());
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`Listening to port: ${port}`);
